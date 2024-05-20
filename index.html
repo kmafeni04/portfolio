@@ -12,16 +12,23 @@
   </head>
   <body>
     <nav class="top-nav">
-      <a href="#about">About me</a>
-      <a href="#experience">Experience</a>
-      <a href="#projects">Projects</a>
-      <a href="#skills">Skills</a>
-      <a href="#contact">Contact me</a>
+      <a class="btn" href="#welcome">Welcome</a>
+      <a class="btn" href="#about">About me</a>
+      <a class="btn" href="#experience">Experience</a>
+      <a class="btn" href="#projects">Projects</a>
+      <a class="btn" href="#skills">Skills</a>
+      <a class="btn" href="#contact">Contact me</a>
       <div class="extra-links">
-        <a href="https://github.com/kmafeni04" target="_blank" rel="noreferrer">
+        <a
+          class="btn"
+          href="https://github.com/kmafeni04"
+          target="_blank"
+          rel="noreferrer"
+        >
           <i class="nf nf-fa-github"></i>
         </a>
         <a
+          class="btn"
           href="https://linkedin.com/in/leonard-mafeni"
           target="_blank"
           rel="noreferrer"
@@ -29,6 +36,7 @@
           <i class="nf nf-md-linkedin"></i>
         </a>
         <a
+          class="btn"
           href="mailto:komemafeni944@gmail.com"
           target="_blank"
           rel="noreferrer"
@@ -38,8 +46,28 @@
       </div>
     </nav>
     <div class="content">
-      <div id="about" class="about">
-        <div class="paragraph">
+      <div id="welcome" class="row hero">
+        <div class="section">
+          <h1 class="header">Hi! <span class="wave"> 👋</span>, I'm Leonard</h1>
+          <h2>A Software Developer</h2>
+          <p>
+            I am passionate about creating innovative and interactive user
+            experiences and am ready to take on new challenges
+          </p>
+          <div>
+            <a href="#contact" class="hero-contact btn">Contact me</a>
+          </div>
+        </div>
+        <div class="section computer-setup-container">
+          <img
+            src="static/images/computer-setup-removebg-preview.png"
+            alt="Computer Setup"
+            class="computer-setup"
+          />
+        </div>
+      </div>
+      <div id="about" class="row about">
+        <div class="section">
           <h1>About me</h1>
           <p>
             Hello! I'm Leonard Mafeni, a passionate software developer with a
@@ -63,34 +91,128 @@
             </li>
           </ul>
         </div>
-        <div class="headshot-container">
+        <div class="section headshot-container">
           <img src="static/images/headshot.jpg" alt="my photo" />
         </div>
       </div>
-      <div id="experience">
-        <h1>Experience</h1>
+      <div id="experience" class="row">
+        <div class="section">
+          <h1>Experience</h1>
+          <div class="job">
+            <h2 class="job-title">Frontend Developer, Intern</h2>
+          </div>
+        </div>
       </div>
-      <div id="projects">
+      <div id="projects" class="row projects">
         <h1>Projects</h1>
       </div>
-      <div id="skills">
-        <h1>Skills</h1>
-        <div class="languages">
+      <div id="skills" class="row skills">
+        <div class="section">
+          <h1>Skills</h1>
           <h2>Languages</h2>
-          <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Jacascript</li>
-            <li>Lua</li>
-            <li>Ruby</li>
-          </ul>
+          <div class="languages skill-type">
+            <div class="language skill">
+              <i class="nf nf-dev-html5 skill-icon"></i>
+              <h3>HTML</h3>
+            </div>
+            <div class="language skill">
+              <i class="nf nf-dev-css3 skill-icon"></i>
+              <h3>CSS</h3>
+            </div>
+            <div class="language skill">
+              <i class="nf nf-dev-javascript_badge skill-icon"></i>
+              <h3>Javascript</h3>
+            </div>
+            <div class="language skill">
+              <i class="nf nf-seti-lua skill-icon"></i>
+              <h3>Lua</h3>
+            </div>
+            <div class="language skill">
+              <i class="nf nf-dev-ruby skill-icon"></i>
+              <h3>Ruby</h3>
+            </div>
+            <div class="language skill">
+              <i class="nf nf-dev-python skill-icon"></i>
+              <h3>Python</h3>
+            </div>
+          </div>
+          <h2>Frameworks / Libraries</h2>
+          <div class="skill-type frameworks">
+            <div class="skill">
+              <i class="nf nf-dev-react skill-icon"></i>
+              <h3>React</h3>
+            </div>
+            <div class="skill">
+              <i class="nf nf-dev-django skill-icon"></i>
+              <h3>Django</h3>
+            </div>
+            <div class="skill">
+              <i class="nf nf-md-hat_fedora skill-icon"></i>
+              <h3>Sinatra</h3>
+            </div>
+            <div class="skill">
+              <i class="nf nf-md-alpha_l_box skill-icon"></i>
+              <h3>Lapis</h3>
+            </div>
+          </div>
+          <h2>Tools I use</h2>
+          <div class="skill-type tools">
+            <div class="skill">
+              <i class="nf nf-dev-linux skill-icon"></i>
+              <h3>Linux</h3>
+            </div>
+            <div class="skill">
+              <i class="nf nf-dev-git skill-icon"></i>
+              <h3>Git</h3>
+            </div>
+            <div class="skill">
+              <i class="nf nf-dev-sqllite skill-icon"></i>
+              <h3>Sqlite</h3>
+            </div>
+            <div class="skill">
+              <i class="nf nf-fa-docker skill-icon"></i>
+              <h3>Docker</h3>
+            </div>
+          </div>
         </div>
-        <div class="frameworks"></div>
-        <div class="tools"></div>
       </div>
-      <div id="contact">
-        <h1>Contact Me</h1>
+      <div id="contact" class="row contact">
+        <div class="section">
+          <h1>Contact me</h1>
+          <div class="links">
+            <a
+              class="btn"
+              href="https://github.com/kmafeni04"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i class="nf nf-fa-github"></i>
+              Github
+            </a>
+            <a
+              class="btn"
+              href="https://linkedin.com/in/leonard-mafeni"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i class="nf nf-md-linkedin"></i>
+              LinkedIn
+            </a>
+            <a
+              class="btn"
+              href="mailto:komemafeni944@gmail.com"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i class="nf nf-md-gmail"></i>
+              Gmail
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   </body>
+  <footer>
+    <p>© Leonard Mafeni 2024.</p>
+  </footer>
 </html>
