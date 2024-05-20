@@ -1,3 +1,18 @@
+:root {
+  --bg-dark: #1c1b22;
+  --bg-light: white;
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: var(--bg-light);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: var(--bg-dark);
+  }
+}
 * {
   font-family:
     system-ui,
@@ -28,6 +43,7 @@ html {
 
 body {
   min-height: 100svh;
+  background-color: var(--bg);
 }
 
 img,
@@ -35,7 +51,7 @@ video,
 svg,
 picture {
   display: block;
-  width: 100%;
+  max-width: 100%;
 }
 
 input,
