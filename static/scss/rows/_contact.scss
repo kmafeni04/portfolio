@@ -1,0 +1,36 @@
+.content .contact {
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    input,
+    textarea {
+      padding-left: 0.5rem;
+      border: solid 1px var(--font-color);
+      border-radius: var(--border-radius-small);
+      background: transparent;
+    }
+
+    div {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      gap: 1rem;
+
+      &>input {
+        flex-basis: 1fr;
+        flex-grow: 1;
+        min-height: 3rem;
+
+      }
+    }
+
+    textarea {
+      padding-top: 0.5rem;
+      min-height: 10rem;
+    }
+
+  }
+
+}

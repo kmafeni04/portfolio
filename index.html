@@ -12,12 +12,12 @@
   </head>
   <body>
     <nav class="top-nav">
-      <a class="btn" href="#welcome">Welcome</a>
-      <a class="btn" href="#about">About me</a>
-      <a class="btn" href="#experience">Experience</a>
-      <a class="btn" href="#projects">Projects</a>
-      <a class="btn" href="#skills">Skills</a>
-      <a class="btn" href="#contact">Contact me</a>
+      <a class="btn" href="#welcome" title="Welcome">Welcome</a>
+      <a class="btn" href="#about" title="About me">About me</a>
+      <a class="btn" href="#experience" title="Experience">Experience</a>
+      <a class="btn" href="#projects" title="Projects">Projects</a>
+      <a class="btn" href="#skills" title="Skills">Skills</a>
+      <a class="btn" href="#contact" title="Contact">Contact me</a>
       <div class="extra-links">
         <a
           class="btn"
@@ -41,12 +41,12 @@
           target="_blank"
           rel="noreferrer"
         >
-          <i class="nf nf-md-gmail"></i>
+          <i class="nf nf-md-email"></i>
         </a>
       </div>
     </nav>
     <div class="content">
-      <div id="welcome" class="row hero">
+      <div id="welcome" class="row welcome">
         <div class="section">
           <h1 class="header">Hi! <span class="wave"> 👋</span>, I'm Leonard</h1>
           <h2>A Software Developer</h2>
@@ -72,8 +72,7 @@
           <p>
             Hello! I'm Leonard Mafeni, a passionate software developer with a
             strong foundation in web development. I love to experiment with
-            different and new technologies and am constantly trying learn and
-            gain experience.
+            different technologies and am constantly trying to learn new things
           </p>
           <h3>Apart from programming, I really enjoy:</h3>
           <ul>
@@ -179,40 +178,49 @@
       <div id="contact" class="row contact">
         <div class="section">
           <h1>Contact me</h1>
-          <div class="links">
-            <a
-              class="btn"
-              href="https://github.com/kmafeni04"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <i class="nf nf-fa-github"></i>
-              Github
-            </a>
-            <a
-              class="btn"
-              href="https://linkedin.com/in/leonard-mafeni"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <i class="nf nf-md-linkedin"></i>
-              LinkedIn
-            </a>
-            <a
-              class="btn"
-              href="mailto:komemafeni944@gmail.com"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <i class="nf nf-md-gmail"></i>
-              Gmail
-            </a>
-          </div>
+          <form
+            action="https://formsubmit.co/komemafeni944@gmail.com"
+            method="POST"
+          >
+            <div>
+              <input type="text" name="name" placeholder="Full Name" required />
+              <input type="text" name="email" placeholder="Email" required />
+            </div>
+            <textarea
+              name="message"
+              placeholder="Your message..."
+              required
+            ></textarea>
+            <button class="btn">Submit</button>
+          </form>
         </div>
       </div>
     </div>
+    <a href="#welcome" class="to-top">
+      <i class="nf nf-cod-triangle_up"></i>
+    </a>
+    <footer>
+      <p>© Leonard Mafeni 2024.</p>
+    </footer>
+    <nav class="bottom-nav">
+      <a class="btn" href="#welcome" title="Welcome">
+        <i class="nf nf-fa-home"></i>
+      </a>
+      <a class="btn" href="#about" title="About me">
+        <i class="nf nf-fa-user"></i>
+      </a>
+      <a class="btn" href="#experience" title="Experience">
+        <i class="nf nf-md-briefcase"></i>
+      </a>
+      <a class="btn" href="#projects" title="Projects">
+        <i class="nf nf-fa-folder"></i>
+      </a>
+      <a class="btn" href="#skills" title="Skills">
+        <i class="nf nf-md-tools"></i>
+      </a>
+      <a class="btn" href="#contact" title="Contact me">
+        <i class="nf nf-md-email"></i>
+      </a>
+    </nav>
   </body>
-  <footer>
-    <p>© Leonard Mafeni 2024.</p>
-  </footer>
 </html>

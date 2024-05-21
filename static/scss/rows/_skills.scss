@@ -1,0 +1,41 @@
+  .content .skills {
+    h2 {
+      margin-bottom: 1rem;
+    }
+
+    h3 {
+      font-weight: bold;
+    }
+
+    >.section>.skill-type {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+      margin-bottom: 1rem;
+
+      >.skill {
+        border: solid 1px var(--font-color);
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+        justify-content: center;
+        padding-block: 3rem;
+        padding-inline: 7rem;
+        border-radius: var(--border-radius-normal);
+        transition: var(--transition-time-short);
+
+        .skill-icon {
+          font-size: 5rem;
+        }
+      }
+
+      >.skill:hover {
+        background-color: var(--bg-inverse);
+        color: var(--font-color-inverse);
+        box-shadow: var(--font-color) 0px 5px 15px 0px;
+        transition: var(--transition-time-short);
+      }
+    }
+  }

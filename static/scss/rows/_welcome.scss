@@ -1,0 +1,34 @@
+  .content .welcome {
+    .header {
+      .wave {
+        display: inline-block;
+        transform-origin: 70% 70%;
+        animation: wave 2s infinite;
+      }
+    }
+
+    .hero-contact {
+      padding-block: 0.5rem;
+      padding-inline: 1rem;
+      border-radius: var(--border-radius-small);
+      border: solid 1px var(--font-color);
+      transition: var(--transition-time-short);
+    }
+
+    .hero-contact:hover {
+      background-color: var(--bg-button);
+      color: var(--font-color-inverse);
+      transition: var(--transition-time-short);
+    }
+
+    .computer-setup-container {
+      align-items: center;
+      border-radius: var(--border-radius-normal);
+
+      .computer-setup {
+        width: 100%;
+        filter: grayscale(100%);
+        border-radius: var(--border-radius-small);
+      }
+    }
+  }

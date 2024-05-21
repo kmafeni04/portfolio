@@ -1,0 +1,17 @@
+  .content .about {
+    >.section>ul {
+      padding-left: 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    >.headshot-container {
+      align-items: center;
+
+      >img {
+        border-radius: 9999px;
+        max-width: 65%;
+      }
+    }
+  }
