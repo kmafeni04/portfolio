@@ -44,7 +44,9 @@ $breakpoint-small: 768px;
   }
 }
 
-* {
+*,
+*::after,
+*::before {
   font-family:
     system-ui,
     -apple-system,
@@ -60,16 +62,17 @@ $breakpoint-small: 768px;
   padding: 0;
   margin: 0;
   color: inherit;
-  outline: 2px solid transparent;
+  box-sizing: inherit;
 }
 
 html {
   color-scheme: dark light;
+  box-sizing: border-box;
 }
 
 @media (prefers-reduced-motion: no-preference) {
   html {
-    scroll-padding-top: 8rem;
+    scroll-padding-top: 7rem;
     scroll-behavior: smooth;
   }
 }
