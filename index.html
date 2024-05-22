@@ -10,7 +10,7 @@
     />
     <link rel="stylesheet" href="static/css/index.css" />
   </head>
-  <body>
+  <body id="top">
     <nav class="top-nav">
       <a class="btn" href="#welcome" title="Welcome">Welcome</a>
       <a class="btn" href="#about" title="About me">About me</a>
@@ -103,7 +103,39 @@
         </div>
       </div>
       <div id="projects" class="row projects">
-        <h1>Projects</h1>
+        <div class="section">
+          <h1>Projects</h1>
+          <div class="projects-wrapper">
+            <div class="project">
+              <img src="static/images/portfolio.png" alt="portfolio" />
+              <div class="project-overlay">
+                <h2 class="project-title">Portfolio</h2>
+                <p>
+                  A responsive and minimally designed website highlighting my
+                  dev experiences and talents
+                </p>
+                <div class="project-links">
+                  <a
+                    href="https://github.com/kmafeni04/portfolio"
+                    target="_blank"
+                    rel="noreferrer"
+                    title="Source"
+                  >
+                    <i class="nf nf-fa-github"></i>
+                  </a>
+                  <a
+                    href="https://kmafeni04.github.io/portfolio/"
+                    target="_blank"
+                    rel="noreferrer"
+                    title="Preview"
+                  >
+                    <i class="nf nf-md-web"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <div id="skills" class="row skills">
         <div class="section">
@@ -166,7 +198,7 @@
             </div>
             <div class="skill">
               <i class="nf nf-dev-sqllite skill-icon"></i>
-              <h3>Sqlite</h3>
+              <h3>SQLite</h3>
             </div>
             <div class="skill">
               <i class="nf nf-fa-docker skill-icon"></i>
@@ -193,10 +225,39 @@
             ></textarea>
             <button class="btn">Submit</button>
           </form>
+          <div class="extra-links">
+            <a
+              class="btn"
+              href="https://github.com/kmafeni04"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i class="nf nf-fa-github"></i>
+              <p>Github</p>
+            </a>
+            <a
+              class="btn"
+              href="https://linkedin.com/in/leonard-mafeni"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i class="nf nf-md-linkedin"></i>
+              <p>LinkedIn</p>
+            </a>
+            <a
+              class="btn"
+              href="mailto:komemafeni944@gmail.com"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i class="nf nf-md-email"></i>
+              <p>Email</p>
+            </a>
+          </div>
         </div>
       </div>
     </div>
-    <a href="#welcome" class="to-top">
+    <a href="#top" class="to-top">
       <i class="nf nf-cod-triangle_up"></i>
     </a>
     <footer>

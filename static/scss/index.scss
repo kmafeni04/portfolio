@@ -1,6 +1,16 @@
 @use "styles.scss";
 @use "rows/index";
-@use 'sass:map';
+
+@mixin navs {
+  width: 100%;
+  position: sticky;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  background-color: var(--bg);
+}
 
 li {
   list-style: none;
@@ -35,16 +45,10 @@ li {
 }
 
 .top-nav {
-  width: 100%;
-  position: sticky;
-  z-index: 1;
-  background-color: var(--bg);
+  @include navs;
   padding-block: 2rem;
+  top: 0;
   box-shadow: var(--font-color) 0px 0px 3px 0px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem;
 
   a {
     min-width: fit-content;
@@ -94,16 +98,9 @@ li {
   display: none;
 
   @media(max-width: styles.$breakpoint-small) {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-    width: 100%;
+    @include navs;
     padding-block: 1rem;
-    position: sticky;
     bottom: 0;
-    z-index: 1;
-    background-color: var(--bg);
     box-shadow: var(--font-color) 0px 2px 5px 0px;
 
     a {
