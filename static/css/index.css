@@ -13,6 +13,7 @@
   --border-radius-small: 0.3rem;
   --border-radius-normal: 0.5rem;
   --transition-time-short: 0.3s;
+  --transition-time-medium: 0.5s;
 }
 
 @media (prefers-color-scheme: light) {
@@ -53,8 +54,13 @@ html {
 
 @media (prefers-reduced-motion: no-preference) {
   html {
-    scroll-padding-top: 7rem;
+    scroll-padding-top: 8rem;
     scroll-behavior: smooth;
+  }
+}
+@media (prefers-reduced-motion: no-preference) and (max-width: 768px) {
+  html {
+    scroll-padding-top: 2rem;
   }
 }
 body {
@@ -135,6 +141,34 @@ button {
   border-radius: var(--border-radius-small);
 }
 
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  }
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    scale: 1.2;
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(-4deg);
+  }
+  100% {
+    scale: 1;
+    transform: rotate(0deg);
+  }
+}
 .content .about > .section > ul {
   padding-left: 2rem;
   display: flex;
@@ -147,6 +181,20 @@ button {
 .content .about > .headshot-container > img {
   border-radius: 9999px;
   max-width: 65%;
+}
+
+.content .timeline .timeline-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.content .timeline .timeline-wrapper .job {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.content .timeline .timeline-wrapper .job-duration {
+  opacity: 0.6;
 }
 
 .content .skills h2 {
@@ -163,6 +211,7 @@ button {
   margin-bottom: 1rem;
 }
 .content .skills > .section > .skill-type > .skill {
+  scale: 1;
   border: solid 1px var(--font-color);
   display: flex;
   flex-direction: column;
@@ -178,6 +227,7 @@ button {
   font-size: 5rem;
 }
 .content .skills > .section > .skill-type > .skill:hover {
+  scale: 1.1;
   background-color: var(--bg-inverse);
   color: var(--font-color-inverse);
   box-shadow: var(--font-color) 0px 5px 15px 0px;
@@ -200,7 +250,7 @@ button {
   justify-content: center;
   border: solid 1px var(--font-color);
   border-radius: var(--border-radius-small);
-  transition: 0.5s;
+  transition: var(--transition-time-medium);
 }
 .content .projects .projects-wrapper .project .project-overlay {
   scale: 0;
@@ -217,13 +267,14 @@ button {
   text-align: center;
   background-color: var(--font-color);
   color: var(--font-color-inverse);
-  transition: 0.5s;
+  transition: var(--transition-time-medium);
 }
 .content .projects .projects-wrapper .project .project-overlay .project-links {
   display: flex;
   gap: 0.5rem;
 }
 .content .projects .projects-wrapper .project .project-overlay .project-links a {
+  scale: 1;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -233,15 +284,20 @@ button {
   border-radius: 100%;
   background: var(--font-color-inverse);
   color: var(--font-color);
+  transition: var(--transition-time-short);
+}
+.content .projects .projects-wrapper .project .project-overlay .project-links a:hover {
+  scale: 1.2;
+  transition: var(--transition-time-short);
 }
 .content .projects .projects-wrapper .project:hover {
-  transition: 0.5s;
+  transition: var(--transition-time-medium);
   box-shadow: var(--font-color) 0px 5px 15px 0px;
 }
 .content .projects .projects-wrapper .project:hover .project-overlay {
   scale: 1;
   opacity: 1;
-  transition: 0.5s;
+  transition: var(--transition-time-medium);
 }
 
 .content .contact form {
@@ -396,34 +452,6 @@ footer {
   justify-content: center;
 }
 
-@keyframes wave {
-  0% {
-    transform: rotate(0deg);
-  }
-  10% {
-    transform: rotate(14deg);
-  }
-  20% {
-    transform: rotate(-8deg);
-  }
-  30% {
-    transform: rotate(14deg);
-  }
-  40% {
-    transform: rotate(-4deg);
-  }
-  50% {
-    font-size: 4rem;
-    transform: rotate(10deg);
-  }
-  60% {
-    transform: rotate(-4deg);
-  }
-  100% {
-    font-size: var(--font-extra-large);
-    transform: rotate(0deg);
-  }
-}
 @keyframes disappear {
   0% {
     scale: 0;

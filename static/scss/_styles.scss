@@ -19,7 +19,7 @@ $breakpoint-small: 768px;
   --border-radius-normal: 0.5rem;
 
   --transition-time-short: 0.3s;
-
+  --transition-time-medium: 0.5s;
 }
 
 @media (prefers-color-scheme: light) {
@@ -75,8 +75,15 @@ html {
 
 @media (prefers-reduced-motion: no-preference) {
   html {
-    scroll-padding-top: 7rem;
+    scroll-padding-top: 8rem;
     scroll-behavior: smooth;
+  }
+
+  @media(max-width: $breakpoint-small) {
+    html {
+      scroll-padding-top: 2rem;
+    }
+
   }
 }
 

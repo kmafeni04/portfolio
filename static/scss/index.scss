@@ -118,41 +118,6 @@ footer {
   justify-content: center;
 }
 
-@keyframes wave {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  10% {
-    transform: rotate(14deg);
-  }
-
-  20% {
-    transform: rotate(-8deg);
-  }
-
-  30% {
-    transform: rotate(14deg);
-  }
-
-  40% {
-    transform: rotate(-4deg);
-  }
-
-  50% {
-    font-size: 4rem;
-    transform: rotate(10deg);
-  }
-
-  60% {
-    transform: rotate(-4deg);
-  }
-
-  100% {
-    font-size: var(--font-extra-large);
-    transform: rotate(0deg);
-  }
-}
 
 @keyframes disappear {
   0% {

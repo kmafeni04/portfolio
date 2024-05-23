@@ -10,11 +10,11 @@
     />
     <link rel="stylesheet" href="static/css/index.css" />
   </head>
-  <body id="top">
+  <body>
     <nav class="top-nav">
       <a class="btn" href="#welcome" title="Welcome">Welcome</a>
       <a class="btn" href="#about" title="About me">About me</a>
-      <a class="btn" href="#experience" title="Experience">Experience</a>
+      <a class="btn" href="#timeline" title="Timeline">Timeline</a>
       <a class="btn" href="#projects" title="Projects">Projects</a>
       <a class="btn" href="#skills" title="Skills">Skills</a>
       <a class="btn" href="#contact" title="Contact">Contact me</a>
@@ -60,7 +60,7 @@
         </div>
         <div class="section computer-setup-container">
           <img
-            src="static/images/computer-setup-removebg-preview.png"
+            src="static/images/computer-setup.png"
             alt="Computer Setup"
             class="computer-setup"
           />
@@ -94,11 +94,59 @@
           <img src="static/images/headshot.jpg" alt="my photo" />
         </div>
       </div>
-      <div id="experience" class="row">
+      <div id="timeline" class="row timeline">
         <div class="section">
-          <h1>Experience</h1>
-          <div class="job">
-            <h2 class="job-title">Frontend Developer, Intern</h2>
+          <h1>Timeline</h1>
+          <div class="timeline-wrapper">
+            <div class="job">
+              <h2 class="job-title">Bsc. Software Engineering</h2>
+              <h3 class="job-company">Nile University of Abuja, Nigeria</h3>
+              <p class="job-duration">Nov 2020 - Present</p>
+              <p class="job-description">
+                Undergraduate Coursework: Operating Systems; Databases; Data
+                Structures and Algorithms; Comp. Architecture; System Analysis
+                and Design; Software Engineering Process; Data Communications
+                and Networking; Software Testing and Quality Assurance; Web
+                Application Development; Object-Oriented Analysis and Design;
+                Engineering Mobile Applications; Discrete Structures; Software
+                Architecture and Design; Software Reverse Engineering;
+                Human-Computer Interaction; Software Configuration and
+                Maintenance; Software Project Management; Software Engineering
+                Security.
+              </p>
+            </div>
+            <div class="job">
+              <h2 class="job-title">Frontend Developer, Intern</h2>
+              <h3 class="job-company">
+                Alphatech Hub Integrated Services Ltd.
+              </h3>
+              <p class="job-duration">July 2023 – September 2023</p>
+              <p class="job-description">
+                Worked on a commissioned betting dashboard using react, learning
+                the component based systems and how to effectively make
+                responsive websites with CSS. Created a landing page for the
+                same company, learning how to take images and styles from figma
+                and applying them to the project. Created a terms and conditions
+                page for the same company, filling out the information by adding
+                data from a server endpoint.
+              </p>
+            </div>
+            <div class="job">
+              <h2 class="job-title">Frontend Developer, Intern</h2>
+              <h3 class="job-company">
+                Alphatech Hub Integrated Services Ltd.
+              </h3>
+              <p class="job-duration">July 2022 – September 2022</p>
+              <p class="job-description">
+                Worked on a commissioned betting dashboard using react, learning
+                the component based systems and how to effectively make
+                responsive websites with CSS. Created a landing page for the
+                same company, learning how to take images and styles from figma
+                and applying them to the project. Created a terms and conditions
+                page for the same company, filling out the information by adding
+                data from a server endpoint.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -107,7 +155,7 @@
           <h1>Projects</h1>
           <div class="projects-wrapper">
             <div class="project">
-              <img src="static/images/portfolio.png" alt="portfolio" />
+              <img src="static/images/portfolio.png" alt="Portfolio" />
               <div class="project-overlay">
                 <h2 class="project-title">Portfolio</h2>
                 <p>
@@ -125,6 +173,47 @@
                   </a>
                   <a
                     href="https://kmafeni04.github.io/portfolio/"
+                    target="_blank"
+                    rel="noreferrer"
+                    title="Preview"
+                  >
+                    <i class="nf nf-md-web"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project">
+              <img src="static/images/sabifinance.png" alt="SabiFinance" />
+              <div class="project-overlay">
+                <h2 class="project-title">SabiFinance</h2>
+                <p>
+                  A gamified personal finance manager created with the lapis web
+                  framework
+                </p>
+                <div class="project-links">
+                  <a
+                    href="https://github.com/kmafeni04/sabifinance"
+                    target="_blank"
+                    rel="noreferrer"
+                    title="Source"
+                  >
+                    <i class="nf nf-fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project">
+              <img src="static/images/studybug.png" alt="StudyBug" />
+              <div class="project-overlay">
+                <h2 class="project-title">StudyBug</h2>
+                <p>
+                  An interactive online learning platform for focused study
+                  sessions and custom AI based learning.Built with Django,
+                  Tailwind and HTMX
+                </p>
+                <div class="project-links">
+                  <a
+                    href="https://www.studybug.me"
                     target="_blank"
                     rel="noreferrer"
                     title="Preview"
@@ -170,6 +259,14 @@
           <h2>Frameworks / Libraries</h2>
           <div class="skill-type frameworks">
             <div class="skill">
+              <i class="nf nf-fa-code skill-icon"></i>
+              <h3>HTMX</h3>
+            </div>
+            <div class="skill">
+              <i class="nf nf-fae-mountains skill-icon"></i>
+              <h3>Alpine.js</h3>
+            </div>
+            <div class="skill">
               <i class="nf nf-dev-react skill-icon"></i>
               <h3>React</h3>
             </div>
@@ -195,14 +292,6 @@
             <div class="skill">
               <i class="nf nf-md-tailwind skill-icon"></i>
               <h3>Tailwind</h3>
-            </div>
-            <div class="skill">
-              <i class="nf nf-fa-code skill-icon"></i>
-              <h3>HTMX</h3>
-            </div>
-            <div class="skill">
-              <i class="nf nf-fae-mountains skill-icon"></i>
-              <h3>Alpine.js</h3>
             </div>
             <div class="skill">
               <i class="nf nf-dev-sqllite skill-icon"></i>
@@ -273,7 +362,7 @@
         </div>
       </div>
     </div>
-    <a href="#top" class="to-top">
+    <a href="#" class="to-top">
       <i class="nf nf-cod-triangle_up"></i>
     </a>
     <footer>
@@ -286,7 +375,7 @@
       <a class="btn" href="#about" title="About me">
         <i class="nf nf-fa-user"></i>
       </a>
-      <a class="btn" href="#experience" title="Experience">
+      <a class="btn" href="#timeline" title="Timeline">
         <i class="nf nf-md-briefcase"></i>
       </a>
       <a class="btn" href="#projects" title="Projects">

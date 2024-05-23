@@ -1,0 +1,18 @@
+.content .timeline {
+  .timeline-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    .job {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+
+      &-duration {
+        opacity: 0.6;
+      }
+    }
+  }
+
+}
