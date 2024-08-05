@@ -290,11 +290,11 @@ button {
   scale: 1.2;
   transition: var(--transition-time-short);
 }
-.content .projects .projects-wrapper .project:hover {
+.content .projects .projects-wrapper .project:hover, .content .projects .projects-wrapper .project:focus-within {
   transition: var(--transition-time-medium);
   box-shadow: var(--font-color) 0px 5px 15px 0px;
 }
-.content .projects .projects-wrapper .project:hover .project-overlay {
+.content .projects .projects-wrapper .project:hover .project-overlay, .content .projects .projects-wrapper .project:focus-within .project-overlay {
   scale: 1;
   opacity: 1;
   transition: var(--transition-time-medium);

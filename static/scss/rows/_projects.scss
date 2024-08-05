@@ -59,7 +59,7 @@
         }
       }
 
-      &:hover {
+      &:hover, &:focus-within {
         transition: var(--transition-time-medium);
         box-shadow: var(--font-color) 0px 5px 15px 0px;
 
