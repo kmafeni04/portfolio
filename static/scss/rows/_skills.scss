@@ -22,6 +22,9 @@
         gap: 1rem;
         align-items: center;
         justify-content: center;
+        min-width: 10rem;
+        width: 100%;
+        max-width: 20rem;
         padding-block: 3rem;
         padding-inline: 7rem;
         border-radius: var(--border-radius-normal);
